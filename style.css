@@ -200,7 +200,7 @@
 .page_heading{
     width: 100%;
     background: radial-gradient(circle, #363535, #000000);
-    color: white;
+    color: rgb(245, 242, 242);
     text-align: center;
     padding: 180px 20px 60px;
 }
@@ -211,7 +211,7 @@
 .page_heading p{
     font-family: 'light-inter';
     font-size: 18px;
-    color: #c5c5c5;
+    color: #ffffff;
     max-width: 600px;
     margin: 20px auto 0;
 }
@@ -220,7 +220,7 @@
 
 .page_hero{
     width: 100%;
-    min-height: 10px;
+    min-height: 100px;
     background-color: #000000;
     position: relative;
     overflow: hidden;
@@ -511,14 +511,14 @@ section[id]{
 .setup_step{
     display: block;
     font-family: 'Inter';
-    color: #C0F500;
+    color: #2bff00;
     font-size: 13px;
     margin-bottom: 8px;
 }
 .setup_item h3{
     font-family: 'Space';
     font-size: 17px;
-    color: white;
+    color: rgb(255, 255, 255);
     margin-bottom: 6px;
 }
 .setup_item p{
@@ -780,6 +780,259 @@ section[id]{
     color: #7a7a7a;
     box-sizing: border-box;
 }
+
+/* ==========================================================
+   CAFE
+   ========================================================== */
+
+    /* Inicial Café*/
+
+   .page_hero_cafe{
+        width: 100%;
+        min-height: 550px;
+        background-color: #000000;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .page_hero_cafe img{
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.4;
+    }
+    .page_hero_cafe::after{
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.85));
+        pointer-events: none;
+    }
+    .page_hero_heading_cafe{
+        position: relative;
+        z-index: 2;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 100px 40px;
+    }
+    .page_hero_heading_cafe h2{
+        font-family: 'Space';
+        font-size: 70px;
+    }
+    .page_hero_heading_cafe p{
+        font-family: 'light-inter';
+        font-size: 18px;
+        color: #c5c5c5;
+        max-width: 600px;
+        margin: 20px auto 0;
+    }
+
+    /* Produtos Café */
+
+        .produtos_grid_cafe{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 90px;
+            background-color: #000000;
+            padding: 25px 50px 25px;
+        }
+
+        .produto_card_cafe{
+            background-color: #000000;
+            border: 1px solid rgb(78, 78, 78);
+            width: 270px;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: all 0.4s ease;
+        }
+        .produto_card_cafe:hover{
+            transform: translateY(-8px);
+            border-color: #5af500;
+        }
+        .produto_card_cafe img{
+            width: 100%;
+            height: 180px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+        .produto_card_cafe h3{
+            font-family: 'Space';
+            color: white;
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+        .produto_card_cafe .info_text{
+            font-family: 'light-inter';
+            color: #c5c5c5;
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+        .preco_cafe{
+            font-family: 'Inter';
+            color: #C0F500;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+
+   /* Botão de café */
+   .botao_cafe{
+    font-family: 'Inter';
+    font-size: 15px;
+    border: none;
+    background-color: #0087f500;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    }
+    .botao_cafe:hover{
+        transform: scale(1.1);
+        background-color: transparent;
+        color: #d9f086;
+    }
+    /* "Espaços Café"*/
+    .page_heading_cafe{
+        width: 100%;
+        background: radial-gradient(circle, #8e9e73, #000000);
+        color: rgb(245, 242, 242);
+        text-align: center;
+        padding: 20px 20px 20px;
+    }
+    .page_heading_cafe h2{
+        font-family: 'Space';
+        font-size: 42px;
+    }
+    .page_heading_cafe p{
+        font-family: 'light-inter';
+        font-size: 18px;
+        color: #ffffff;
+        max-width: 600px;
+        margin: 20px auto 0;
+    }
+
+    /* Origem Cafè */
+
+    .setup_section_cafe{
+    background: radial-gradient(circle at top, #262626, #000000);
+    padding: 100px 40px 120px;
+    }
+    .setup_grid_cafe{
+        max-width: 2150px;
+        background-color: rgb(110, 185, 39);
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        box-sizing: border-box;
+    }
+    .setup_item_cafe{
+        background-color: #050505;
+        border: 1px solid rgb(59, 68, 54);
+        width: 230px;
+        padding: 25px 20px;
+        text-align: center;
+        box-sizing: border-box;
+        transition: all 0.4s ease;
+    }
+    .setup_item_cafe:hover{
+        transform: translateY(-8px);
+        border-color: #C0F500;
+    }
+    .setup_item_cafe img{
+        width: 100%;
+        height: 520px;
+        object-fit: contain;
+        margin-bottom: 16px;
+    }
+    .setup_step_cafe{
+        display: block;
+        font-family: 'Inter';
+        color: #2bff00;
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    .setup_item_cafe h3{
+        font-family: 'Space';
+        font-size: 17px;
+        color: rgb(255, 255, 255);
+        margin-bottom: 6px;
+    }
+    .setup_item_cafe p{
+        font-family: 'light-inter';
+        font-size: 13px;
+        color: #9a9a9a;
+    }
+    .setup_arrow_cafe{
+        font-family: 'Space';
+        font-size: 22px;
+        color: #C0F500;
+        padding: 0 6px;
+    }
+
+
+    /* Modal do café */
+
+    .modal_overlay_cafe {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.75);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 200;
+        padding: 200px;
+    }
+
+    .modal_box_cafe {
+        background-color: #131313;
+        border: 1px solid rgb(78, 78, 78);
+        max-width: 420px;
+        width: 100%;
+        padding: 30px;
+        position: relative;
+        text-align: center;
+    }
+
+    .modal_fechar_cafe {
+        position: absolute;
+        top: 8px;
+        right: 14px;
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 26px;
+        line-height: 1;
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
+
+    .modal_fechar_cafe:hover {
+        color: #C0F500;
+    }
+
+    .modal_box_cafe h3 {
+        font-family: 'Space';
+        color: white;
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .info_text_cafe {
+        font-family: 'light-inter';
+        color: #c5c5c5;
+        font-size: 15px;
+        margin-bottom: 15px;
+    } 
 
 /* ==========================================================
    RESPONSIVIDADE

@@ -2,94 +2,302 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Café</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechCoffee | Café</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <header class="header">
-        <navbar class="navigation">
-            <div class="logo">
-                <a href="index.html">
+    <body>
+        <!-- HEADER -->
+        <header class="header">
+            <nav class="navigation">
+                <div class="logo">
+                    <a href="index.html">
                     <h1 class="title-logo">TechCoffee</h1>
-                </a>
-            </div>
+                    </a>
+                </div>
             <div class="nav_desktop">
                 <ul>
-                    <li><a href="cafe.html">Café</a></li>
-                    <li><a href="equipamentos.html">Equipamentos</a></li>
-                    <li><a href="acessorios.html">Acessórios</a></li>
-                    <li><a href="kits.html">Kits</a></li>
-                    <li><a href="lifestyle.html">LifeStyle</a></li>
+                <li><a href="cafe.html">Café</a></li>
+                <li><a href="equipamentos.html">Equipamentos</a></li>
+                <li><a href="acessorios.html">Acessórios</a></li>
+                <li><a href="kits.html">Kits</a></li>
+                <li><a href="lifestyle.html">LifeStyle</a></li>
                 </ul>
             </div>
-            <div class="actions">
-                <button class="botao-search">
-                    <div class="icon_search">
-                        <img src="assets/icons/vetor-search.png" alt="icon search">
+                <div class="actions">
+                    <button class="botao-search"><img src="assets/icons/vetor-search.png" alt="Buscar"></button>
+                    <button class="botao-carrinho"><img src="assets/icons/vetor-carrinho.png" alt="Carrinho"></button>
+                    <button class="botao-perfil"><img src="assets/icons/vetor-perfil.png" alt="Perfil"></button>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+
+            <!-- HERO -->
+            <section class="page_hero_cafe">
+                <img src="assets/img/graos-cafe.png" alt="Grãos de café">
+                <div class="page_hero_heading_cafe">
+                    <h2>Café</h2>
+                    <p>Torras selecionadas e blends exclusivos para quem leva o preparo a sério.</p>
+                    <a href="#selecoes" class="botao_cta">Explorar cafés</a>
+                </div>
+            </section>
+
+            <!-- ORIGENS -->
+            <section class="page_heading_cafe" id="origens">             
+                <h2>De onde vem o seu café?</h2>
+                <p>Explore as principais origens e descubra seus perfis sensoriais.</p>    
+            </section>
+            <div class="produtos_grid">
+                <div class="produto_card origem_card" data-regiao="etio">
+                    <img src="assets/img/cafe/cafe-etiopia.png" alt="Etiópia">
+                    <h3>Etiópia</h3>
+                    <p class="info_text">Florais, frutados e aromáticos.</p>
+                </div>
+                <div class="produto_card origem_card" data-regiao="jamaica">
+                    <img src="assets/img/cafe/cafe-jamaica.png" alt="Jamaica">
+                    <h3>Jamaica</h3>
+                    <p class="info_text">Suave, equilibrado e sofisticado.</p>
+                </div>
+                <div class="produto_card origem_card" data-regiao="panama">
+                    <img src="assets/img/cafe/cafe-panama.png" alt="Panamá">
+                    <h3>Panamá</h3>
+                    <p class="info_text">Aromático e complexo.</p>
+                </div>
+                <div class="produto_card origem_card" data-regiao="brasil">
+                    <img src="assets/img/cafe/cafe-brasil.png" alt="Brasil">
+                    <h3>Brasil</h3>
+                    <p class="info_text">Chocolateado e frutado.</p>
+                </div>
+                <div class="produto_card origem_card" data-regiao="mundo">
+                    <img src="assets/img/cafe/globo.png" alt="Mundo">
+                    <h3>Mundo</h3>
+                    <p class="info_text">Outras regiões produtoras.</p>
+                </div>
+            </div>
+
+            <!-- SELEÇÕES -->
+            <section class="page_heading_cafe" id="selecoes">
+            <h2>Explore nossas seleções</h2>
+            <p>Descubra cafés únicos de diferentes origens.</p>
+            </section>
+            <div class="produtos_grid">
+                <div class="produto_card">
+                    <img src="assets/img/cafe/etiopia.png" alt="Café Etiópia Yirgacheffe">
+                    <h3>Café Etiópia Yirgacheffe</h3>
+                    <p class="info_text">Floral • Cítrico • Frutado</p>
+                    <span class="preco">R$ 69,90</span>
+                    <button class="botao_produto">
+                        <p>Adicionar ao carrinho</p>
+                    </button>
+                </div>
+                <div class="produto_card">
+                    <img src="assets/img/cafe/jamaica.png" alt="Jamaica Blue Mountain">
+                    <h3>Jamaica Blue Mountain</h3>
+                    <p class="info_text">Suave • Equilibrado • Aromático</p>
+                    <span class="preco">R$ 89,90</span>
+                    <button class="botao_produto">
+                        <p>Adicionar ao carrinho</p>
+                    </button>
+                </div>
+                <div class="produto_card">
+                    <img src="assets/img/cafe/panama.png" alt="Café Panamá Geisha">
+                    <h3>Café Panamá Geisha</h3>
+                    <p class="info_text">Floral • Frutado • Complexo</p>
+                    <span class="preco">R$ 84,90</span>
+                    <button class="botao_produto">
+                        <p>Adicionar ao carrinho</p>
+                    </button>
+                </div>
+                <div class="produto_card">
+                    <img src="assets/img/cafe/brasil.png" alt="Café Brasil Cerrado">
+                    <h3>Café Brasil Cerrado</h3>
+                    <p class="info_text">Chocolate • Caramelo • Castanhas</p>
+                    <span class="preco">R$ 49,90</span>
+                    <button class="botao_produto">
+                        <p>Adicionar ao carrinho</p>
+                    </button>
+                </div>
+            </div>
+
+            <!-- PERFIL -->
+            <section class="page_heading_cafe" id="perfil">
+            <h2>Qual é o seu perfil?</h2>
+            <p>Descubra os sabores que mais combinam com você.</p>
+            </section>
+            <div class="produtos_grid_cafe">
+                <div class="produto_card_cafe perfil_card">
+                    <h3>Frutado</h3>
+                    <p class="info_text">Frutas vermelhas, cítricos e tropicais.</p>
+                </div>
+                <div class="produto_card_cafe perfil_card">
+                    <h3>Chocolate</h3>
+                    <p class="info_text">Chocolate, caramelo e castanhas.</p>
+                </div>
+                <div class="produto_card_cafe perfil_card">
+                    <h3>Floral</h3>
+                    <p class="info_text">Aromas delicados e perfumados.</p>
+                </div>
+                <div class="produto_card_cafe perfil_card">
+                    <h3>Intenso</h3>
+                    <p class="info_text">Corpo elevado e sabores marcantes.</p>
+                </div>
+                                <div class="produto_card_cafe perfil_card">
+                    <h3>Exótico</h3>
+                    <p class="info_text">Vinho, chiclete e fermentação.</p>
+                </div>
+                                <div class="produto_card_cafe perfil_card">
+                    <h3>Herbáceo</h3>
+                    <p class="info_text">Frescos, chá verde e especiarias.</p>
+                </div>
+            </div>
+
+            <!-- ORIGEM IMPORTA -->
+            <section class="page_heading_cafe" id="origem-importa">
+            <h2>Por que a origem importa?</h2>
+            <p>Entenda como cada fator influencia o sabor.</p>
+            </section>
+            <div class="setup_grid_cafe">
+                <div class="setup_item_cafe">
+                    <span class="setup_step_cafe">Origem</span>
+                    <p>O território onde o café é cultivado influencia suas características.</p>
+                    <p>Clima, solo e condições naturais de cada região contribuem para aromas e sabores únicos na bebida.</p>
+                </div>
+                <div class="setup_item_cafe">
+                    <span class="setup_step_cafe">Altitude</span>
+                    <p>A altitude influencia o desenvolvimento dos grãos, contribuindo para cafés com maior acidez, equilíbrio e complexidade. Quanto maior a altitude, mais marcante pode ser o sabor.</p>
+                </div>
+                <div class="setup_item_cafe">
+                    <span class="setup_step_cafe">Variedade</span>
+                    <p>Cada variedade de café possui características próprias, que influenciam o aroma, a doçura, a acidez e o corpo da bebida. Essas diferenças ajudam a definir a identidade e o perfil sensorial de cada café.</p>
+                </div>
+                <div class="setup_item_cafe">
+                    <span class="setup_step_cafe">Torra</span>
+                    <p>A torra transforma e desenvolve as características do grão, influenciando diretamente seus aromas, sabores, intensidade e características sensoriais presentes na bebida.</p>
+                </div>
+                <div class="setup_item_cafe">
+                    <span class="setup_step_cafe">Sabor</span>
+                    <p>O sabor final do café é resultado da combinação de todos esses fatores.</p>
+                    <p>Origem, altitude, variedade e torra trabalham juntos para criar uma experiência única em cada xícara.</p>
+                </div>
+            </div>
+
+            <!-- UNIVERSO -->
+            <section class="page_heading_cafe" id="universo">
+            <h2>Conheça o universo do café</h2>
+            <p>Explore as principais origens.</p>
+            <div class="lab_grid">
+                <div class="lab_card">
+                    <img src="assets/img/cafe/bandeira-etiopia.png" alt="Etiópia">
+                    <div class="lab_content">
+                        <h3>Etiópia</h3>
+                            <button 
+                                class="botao_cafe"
+                                data-nome_cafe="<h3> O Berço Aromático <h3/>"
+                                data-descricao_cafe="Considerada o berço do café, a Etiópia entrega grãos complexos e intensamente perfumados. É a referência máxima para os perfis floral e frutado, apresentando acidez cítrica brilhante e notas que lembram jasmim, bergamota e frutas vermelhas. Regiões como Yirgacheffe e Sidamo produzem cafés que parecem chás delicados na xícara.">
+                                Ver detalhes
+                            </button>
                     </div>
-                </button>
-                <button class="botao-carrinho">
-                    <div class="icon_carrinho">
-                        <img src="assets/icons/vetor-carrinho.png" alt="icon carrinho">
+                </div>
+                <div class="lab_card">
+                    <img src="assets/img/cafe/bandeira-jamaica.png" alt="Jamaica">
+                    <div class="lab_content">
+                        <h3>Jamaica</h3>
+                            <button 
+                                class="botao_cafe"
+                                data-nome_cafe="<h3> O Equilíbrio Lendário <h3/>"
+                                data-descricao_cafe="O lar do famoso Blue Mountain, um café cultivado em altitudes elevadas sob névoa constante. Destaca-se pelo equilíbrio absoluto: corpo sedoso, doçura suave e uma ausência quase total de amargor. É uma bebida clássica e sofisticada, com notas sutis de ervas e cacau, tradicionalmente exportada em icônicos barris de madeira.">
+                                Ver detalhes
+                            </button>
                     </div>
-                </button>
-                <button class="botao-perfil">
-                    <div class="icon_perfil">
-                        <img src="assets/icons/vetor-perfil.png" alt="icon perfil">
+                </div>
+                <div class="lab_card">
+                    <img src="assets/img/cafe/bandeira-panama.png" alt="Panamá">
+                    <div class="lab_content">
+                        <h3>Panamá</h3>
+                            <button 
+                                class="botao_cafe"
+                                data-nome_cafe="<h3> A Elite da Inovação <h3/>"
+                                data-descricao_cafe="Famoso mundialmente pela variedade Geisha, o Panamá produz alguns dos cafés mais caros, complexos e cobiçados do planeta. O terroir vulcânico de Boquete resulta em xícaras de perfil exótico, com notas intensas de jasmim, papaia, manga e uma clareza de sabor incomparável, que atrai provadores e competidores do mundo todo.">
+                                Ver detalhes
+                            </button>
                     </div>
-                </button>
+                </div>
+                <div class="lab_card">
+                    <img src="assets/img/cafe/bandeira-brasil.png" alt="Brasil">
+                    <div class="lab_content">
+                        <h3>Brasil</h3>
+                            <button 
+                                class="botao_cafe"
+                                data-nome_cafe="<h3> O Gigante da Doçura <h3/>"
+                                data-descricao_cafe="Maior produtor mundial, destaca-se por cafés encorpados, com baixa acidez e doçura natural marcante. É a origem perfeita para os amantes do perfil de chocolate, caramelo e castanhas. Regiões como a Mogiana e o Sul de Minas produzem grãos que servem como a base ideal tanto para o espresso do dia a dia quanto para blends equilibrados.">
+                                Ver detalhes
+                            </button>
+                    </div>
+                </div>
             </div>
-        </navbar>
-    </header>
-    <!--Cabeçalho-->
+            </section>
 
-    <main class="main">
-        <div class="page_hero">
-            <img src="assets/img/graos-cafe.png" alt="Grãos de café torrados">
-            <div class="page_hero_heading">
-                <h2>Café</h2>
-                <p>
-                    Torras selecionadas e blends exclusivos para quem leva o preparo a sério.
-                </p>
+            <!-- BANNER FINAL -->
+            <section class="cta_final">
+            <img src="assets/img/cafe/maquina.png" alt="Banner TechCoffee">
+            <h2>Não é apenas café. É precisão em cada xícara.</h2>
+            <a href="equipamentos.html" class="botao_cta">Explorar equipamentos →</a>
+            </section>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer_grid">
+            <div class="footer_brand">
+                <h2>TechCoffee</h2>
+                <p>Tecnologia, café e desempenho num só lugar. Equipamentos de precisão e torras artesanais para o seu ritual diário.</p>
+                <div class="footer_social">
+                <a href="#" aria-label="Instagram">IG</a>
+                <a href="#" aria-label="Facebook">FB</a>
+                <a href="#" aria-label="YouTube">YT</a>
+                </div>
             </div>
-        </div>
-
-        <div class="produtos_grid">
-            <div class="produto_card">
-                <img src="assets/img/cafe/cafe-arabica.png" alt="Café Arábica Torra Média">
-                <h3>Arábica Torra Média</h3>
-                <p class="info_text">Notas de caramelo e castanhas, acidez equilibrada.</p>
-                <span class="preco">R$ 49,90</span>
-                <button class="botao_produto">
-                    <p class="kit-text">Ver detalhes</p>
-                </button>
+            <div class="footer_col">
+                <h4>Navegação</h4>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#origens">Origens</a></li>
+                <li><a href="#selecoes">Seleções</a></li>
+                <li><a href="#perfil">Perfil</a></li>
+                <li><a href="#universo">Universo</a></li>
+                </ul>
             </div>
-
-            <div class="produto_card">
-                <img src="assets/img/cafe/cafe-especial.png" alt="Café Especial 90+">
-                <h3>Especial 90+</h3>
-                <p class="info_text">Microlote premiado, perfil frutado e floral.</p>
-                <span class="preco">R$ 79,90</span>
-                <button class="botao_produto">
-                    <p class="kit-text">Ver detalhes</p>
-                </button>
+            <div class="footer_col">
+                <h4>Categorias</h4>
+                <ul>
+                <li><a href="cafe.html">Café</a></li>
+                <li><a href="equipamentos.html">Equipamentos</a></li>
+                <li><a href="acessorios.html">Acessórios</a></li>
+                <li><a href="kits.html">Kits</a></li>
+                <li><a href="lifestyle.html">LifeStyle</a></li>
+                </ul>
             </div>
-
-            <div class="produto_card">
-                <img src="assets/img/cafe-descafeinado.png" alt="Café Descafeinado">
-                <h3>Descafeinado</h3>
-                <p class="info_text">Todo o sabor, sem abrir mão da noite de sono.</p>
-                <span class="preco">R$ 54,90</span>
-                <button class="botao_produto">
-                    <p class="kit-text">Ver detalhes</p>
-                </button>
+            <div class="footer_col">
+                <h4>Informações</h4>
+                <ul>
+                <li><a href="#">Sobre a TechCoffee</a></li>
+                <li><a href="#">Entrega e prazos</a></li>
+                <li><a href="#">Trocas e devoluções</a></li>
+                <li><a href="#">Fale conosco</a></li>
+                </ul>
             </div>
-        </div>
-    </main>
-    <script src="script.js"></script>
-</body>
+            </div>
+            <div class="footer_bottom">
+            <span>&copy; 2026 TechCoffee. Todos os direitos reservados.</span>
+            <span>Feito para quem leva o café a sério.</span>
+            </div>
+        </footer>
 
+        <script src="script.js"></script>
+    </body>
 </html>
