@@ -47,45 +47,347 @@
     <!--Cabeçalho-->
 
     <main class="main">
-        <div class="page_heading">
-            <h2>Equipamentos</h2>
-            <p>
-                Máquinas e moedores de alta performance para o seu setup de café.
-            </p>
-        </div>
+        
+        <section class="page_hero">
+                <img src="assets/img/0equipamentos.png" alt="Grãos de café">
+                <div class="page_hero_heading">
+                    <h2>Equipamentos</h2>
+                    <p>
+                        Do primeiro café ao nível profissional. Monte seu setup de acordo com sua experiência.
+                    </p>
+                </div>
+        </section>
 
-        <div class="produtos_grid">
-            <div class="produto_card">
-                <img src="assets/img/equipamentos/maquina-espresso.png" alt="Máquina de Espresso Automática">
-                <h3>Espresso Automática</h3>
-                <p class="info_text">Extração precisa com controle de temperatura e pressão.</p>
-                <span class="preco">R$ 1.899,00</span>
-                <button class="botao_produto">
-                    <p class="kit-text">Ver detalhes</p>
-                </button>
-            </div>
+        <!-- Navegação de progressão entre níveis -->
+        <nav class="niveis_nav" aria-label="Níveis de experiência">
+            <a href="#nivel-basico" class="nivel_link">01 Básico</a>
+            <span class="nivel_separador">→</span>
+            <a href="#nivel-intermediario" class="nivel_link">02 Intermediário</a>
+            <span class="nivel_separador">→</span>
+            <a href="#nivel-espresso" class="nivel_link">03 Espresso</a>
+            <span class="nivel_separador">→</span>
+            <a href="#nivel-avancado" class="nivel_link">04 Avançado</a>
+        </nav>
 
-            <div class="produto_card">
-                <img src="assets/img/equipamentos/moedor-eletrico.png" alt="Moedor Elétrico de Precisão">
-                <h3>Moedor Elétrico</h3>
-                <p class="info_text">Moagem uniforme com ajuste fino para cada método.</p>
-                <span class="preco">R$ 649,00</span>
-                <button class="botao_produto">
-                    <p class="kit-text">Ver detalhes</p>
-                </button>
+        <!-- NÍVEL 1 — BÁSICO -->
+        <section class="nivel_secao nivel_secao--basico" id="nivel-basico">
+            <div class="section_heading">
+                <span class="section_tag nivel_tag--basico">Nível 1 — Básico</span>
+                <h2>Café simples</h2>
+                <p>Os equipamentos essenciais para preparar um bom café no dia a dia.</p>
             </div>
+            <div class="produtos_grid produtos_grid_niveis">
+                <div class="produto_card">
+                    <img src="assets/img/equipamentos/1coador-papel.png" alt="Coador de Papel">
+                    <h3>Coador de Papel</h3>
+                    <p class="info_text">O clássico e mais acessível jeito de começar a coar seu café.</p>
+                    <span class="preco">R$ 14,90</span>
+                    <button class="botao_produto">
+                        <p class="kit-text">Ver detalhes</p>
+                    </button>
+                </div>
+                <div class="produto_card">
+                    <img src="assets/img/equipamentos/1suporte-coador.png" alt="Suporte para Coador">
+                    <h3>Suporte para Coador</h3>
+                    <p class="info_text">Base estável para o coador de papel, direto sobre a xícara.</p>
+                    <span class="preco">R$ 39,90</span>
+                    <button class="botao_produto">
+                        <p class="kit-text">Ver detalhes</p>
+                    </button>
+                </div>
+                <div class="produto_card">
+                    <img src="assets/img/equipamentos/1chaleira.png" alt="Chaleira">
+                    <h3>Chaleira</h3>
+                    <p class="info_text">Aquecimento simples e rápido da água para o preparo.</p>
+                    <span class="preco">R$ 89,90</span>
+                    <button class="botao_produto">
+                        <p class="kit-text">Ver detalhes</p>
+                    </button>
+                </div>
+                <div class="produto_card">
+                    <img src="assets/img/equipamentos/1balanca.png" alt="Balança">
+                    <h3>Balança</h3>
+                    <p class="info_text">Medidas certas de café e água para um resultado consistente.</p>
+                    <span class="preco">R$ 59,90</span>
+                    <button class="botao_produto">
+                        <p class="kit-text">Ver detalhes</p>
+                    </button>
+                </div>
+                <div class="produto_card">
+                    <img src="assets/img/equipamentos/1cafeteira-eletrica.png" alt="Cafeteira Elétrica">
+                    <h3>Cafeteira Elétrica</h3>
+                    <p class="info_text">Praticidade no dia a dia, com preparo automático.</p>
+                    <span class="preco">R$ 199,90</span>
+                    <button class="botao_produto">
+                        <p class="kit-text">Ver detalhes</p>
+                    </button>
+                </div>
+                <div class="produto_card">
+                    <img src="assets/img/equipamentos/1garrafa-termica.png" alt="Garrafa Térmica">
+                    <h3>Garrafa Térmica</h3>
+                    <p class="info_text">Mantém a temperatura ideal por horas, onde você estiver.</p>
+                    <span class="preco">R$ 79,90</span>
+                    <button class="botao_produto">
+                        <p class="kit-text">Ver detalhes</p>
+                    </button>
+                </div>
+            </div>
+        </section>
 
-            <div class="produto_card">
-                <img src="assets/img/equipamentos/maquina-profissional.png" alt="Máquina Profissional">
-                <h3>Máquina Profissional</h3>
-                <p class="info_text">Caldeira dupla, ideal para quem busca nível de barista.</p>
-                <span class="preco">R$ 4.299,00</span>
-                <button class="botao_produto">
-                    <p class="kit-text">Ver detalhes</p>
-                </button>
+        <!-- NÍVEL 2 — INTERMEDIÁRIO -->
+        <section class="nivel_secao nivel_secao--intermediario" id="nivel-intermediario">
+            <div class="section_heading">
+                <span class="section_tag nivel_tag--intermediario">Nível 2 — Intermediário</span>
+                <h2>Café especial</h2>
+                <p>Para quem quer explorar novos métodos e descobrir diferentes sabores.</p>
             </div>
-        </div>
+            <div class="produtos_grid produtos_grid_niveis">
+                <div class="produto_card">
+                    <img src="assets/img/equipamentos/2moedor-manual.png" alt="Moedor Manual">
+                    <h3>Moedor Manual</h3>
+                    <p class="info_text">Moagem sob controle, ideal para quem está começando a explorar métodos.</p>
+                    <span class="preco">R$ 129,90</span>
+                    <button class="botao_produto">
+                        <p class="kit-text">Ver detalhes</p>
+                    </button>
+                </div>
+                <div class="produto_card">
+                    <img src="assets/img/equipamentos/2balanca-precisao.png" alt="Balança de Precisão">
+                    <h3>Balança de Precisão</h3>
+                    <p class="info_text">Precisão de gramas para dosar café e água com exatidão.</p>
+                    <span class="preco">R$ 179,90</span>
+                    <button class="botao_produto">
+                        <p class="kit-text">Ver detalhes</p>
+                    </button>
+                </div>
+                <div class="produto_card">
+                    <img src="assets/img/equipamentos/2chaleira-bico-ganso.png" alt="Chaleira Bico de Ganso">
+                    <h3>Chaleira Bico de Ganso</h3>
+                    <p class="info_text">Fluxo de água controlado para uma extração mais uniforme.</p>
+                    <span class="preco">R$ 249,90</span>
+                    <button class="botao_produto">
+                        <p class="kit-text">Ver detalhes</p>
+                    </button>
+                </div>
+                <div class="produto_card">
+                    <img src="assets/img/equipamentos/2v60.png" alt="V60">
+                    <h3>V60</h3>
+                    <p class="info_text">Extração lenta e limpa, que realça notas florais e frutadas.</p>
+                    <span class="preco">R$ 89,90</span>
+                    <button class="botao_produto">
+                        <p class="kit-text">Ver detalhes</p>
+                    </button>
+                </div>
+                <div class="produto_card">
+                    <img src="assets/img/equipamentos/2prensa-francesa.png" alt="Prensa Francesa">
+                    <h3>Prensa Francesa</h3>
+                    <p class="info_text">Corpo denso e textura marcante, direto e sem filtro de papel.</p>
+                    <span class="preco">R$ 149,90</span>
+                    <button class="botao_produto">
+                        <p class="kit-text">Ver detalhes</p>
+                    </button>
+                </div>
+                <div class="produto_card">
+                    <img src="assets/img/equipamentos/2aeropress.png" alt="Aeropress">
+                    <h3>Aeropress</h3>
+                    <p class="info_text">Rápido, versátil e portátil — perfeito para qualquer setup.</p>
+                    <span class="preco">R$ 199,90</span>
+                    <button class="botao_produto">
+                        <p class="kit-text">Ver detalhes</p>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- NÍVEL 3 — ESPRESSO -->
+        <section class="nivel_secao nivel_secao--espresso" id="nivel-espresso">
+            <div class="section_heading">
+                <span class="section_tag nivel_tag--espresso">Nível 3 — Espresso</span>
+                <h2>Espresso em casa</h2>
+                <p>Eleve seu preparo e tenha mais controle sobre cada extração.</p>
+            </div>
+            <div class="produtos_grid produtos_grid_niveis">
+                <div class="produto_card">
+                    <img src="assets/img/equipamentos/3maquina-espresso.png" alt="Máquina de Espresso">
+                    <h3>Máquina de Espresso</h3>
+                    <p class="info_text">Extração precisa com controle de temperatura e pressão.</p>
+                    <span class="preco">R$ 1.899,00</span>
+                    <button class="botao_produto">
+                        <p class="kit-text">Ver detalhes</p>
+                    </button>
+                </div>
+                <div class="produto_card">
+                    <img src="assets/img/equipamentos/3moedor-eletrico.png" alt="Moedor Elétrico">
+                    <h3>Moedor Elétrico</h3>
+                    <p class="info_text">Moagem uniforme com ajuste fino para cada método.</p>
+                    <span class="preco">R$ 649,00</span>
+                    <button class="botao_produto">
+                        <p class="kit-text">Ver detalhes</p>
+                    </button>
+                </div>
+                <div class="produto_card">
+                    <img src="assets/img/equipamentos/3tamper.png" alt="Tamper">
+                    <h3>Tamper</h3>
+                    <p class="info_text">Compactação uniforme do pó pra uma extração equilibrada.</p>
+                    <span class="preco">R$ 129,90</span>
+                    <button class="botao_produto">
+                        <p class="kit-text">Ver detalhes</p>
+                    </button>
+                </div>
+                <div class="produto_card">
+                    <img src="assets/img/equipamentos/3porta-filtro.png" alt="Porta-filtro">
+                    <h3>Porta-filtro</h3>
+                    <p class="info_text">Encaixe preciso para máxima extração de sabor.</p>
+                    <span class="preco">R$ 179,90</span>
+                    <button class="botao_produto">
+                        <p class="kit-text">Ver detalhes</p>
+                    </button>
+                </div>
+                <div class="produto_card">
+                    <img src="assets/img/equipamentos/3jarra-leite.png" alt="Jarra para Leite">
+                    <h3>Jarra para Leite</h3>
+                    <p class="info_text">Bico ideal para vaporizar e servir com precisão.</p>
+                    <span class="preco">R$ 89,90</span>
+                    <button class="botao_produto">
+                        <p class="kit-text">Ver detalhes</p>
+                    </button>
+                </div>
+                <div class="produto_card">
+                    <img src="assets/img/equipamentos/3balanca-espresso.png" alt="Balança para Espresso">
+                    <h3>Balança para Espresso</h3>
+                    <p class="info_text">Timer e precisão de gramas direto embaixo do porta-filtro.</p>
+                    <span class="preco">R$ 219,90</span>
+                    <button class="botao_produto">
+                        <p class="kit-text">Ver detalhes</p>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- NÍVEL 4 — AVANÇADO -->
+        <section class="nivel_secao nivel_secao--avancado" id="nivel-avancado">
+            <div class="section_heading">
+                <span class="section_tag nivel_tag--avancado">Nível 4 — Avançado</span>
+                <h2>Barista avançado</h2>
+                <p>Equipamentos avançados para quem busca precisão e padrão profissional.</p>
+            </div>
+            <div class="produtos_grid produtos_grid_niveis">
+                <div class="produto_card">
+                    <img src="assets/img/equipamentos/4maquina-semiprofissional.png" alt="Máquina de Espresso Semiprofissional">
+                    <h3>Máquina Semiprofissional</h3>
+                    <p class="info_text">Caldeira dupla, ideal para quem busca nível de barista.</p>
+                    <span class="preco">R$ 6.499,00</span>
+                    <button class="botao_produto">
+                        <p class="kit-text">Ver detalhes</p>
+                    </button>
+                </div>
+                <div class="produto_card">
+                    <img src="assets/img/equipamentos/4moedor-profissional.png" alt="Moedor Profissional">
+                    <h3>Moedor Profissional</h3>
+                    <p class="info_text">Rebolos de alta performance para moagem consistente em volume.</p>
+                    <span class="preco">R$ 2.899,00</span>
+                    <button class="botao_produto">
+                        <p class="kit-text">Ver detalhes</p>
+                    </button>
+                </div>
+                <div class="produto_card">
+                    <img src="assets/img/equipamentos/4tamper-precisao.png" alt="Tamper de Precisão">
+                    <h3>Tamper de Precisão</h3>
+                    <p class="info_text">Calibrado para aplicar sempre a mesma força de compactação.</p>
+                    <span class="preco">R$ 349,90</span>
+                    <button class="botao_produto">
+                        <p class="kit-text">Ver detalhes</p>
+                    </button>
+                </div>
+                <div class="produto_card">
+                    <img src="assets/img/equipamentos/4wdt.png" alt="WDT">
+                    <h3>WDT</h3>
+                    <p class="info_text">Distribuição do pó antes da compactação, sem canais na extração.</p>
+                    <span class="preco">R$ 79,90</span>
+                    <button class="botao_produto">
+                        <p class="kit-text">Ver detalhes</p>
+                    </button>
+                </div>
+                <div class="produto_card">
+                    <img src="assets/img/equipamentos/4refractometro.png" alt="Refractômetro">
+                    <h3>Refractômetro</h3>
+                    <p class="info_text">Mede o rendimento da extração com precisão de laboratório.</p>
+                    <span class="preco">R$ 899,00</span>
+                    <button class="botao_produto">
+                        <p class="kit-text">Ver detalhes</p>
+                    </button>
+                </div>
+                <div class="produto_card">
+                    <img src="assets/img/equipamentos/4kit-latte-art.png" alt="Kit para Latte Art">
+                    <h3>Kit para Latte Art</h3>
+                    <p class="info_text">Jarras e ferramentas para desenhar cada xícara com precisão.</p>
+                    <span class="preco">R$ 149,90</span>
+                    <button class="botao_produto">
+                        <p class="kit-text">Ver detalhes</p>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA FINAL -->
+        <section class="cta_final">
+            <img src="assets/img/maquina02.png" alt="maquina">
+            <h2>Seu café evolui. Seu equipamento também.</h2>
+            <p>Comece com o essencial, explore novos métodos e avance até dominar o espresso.</p>
+            <a href="cafe.html" class="botao_cta">Explorar cafés</a>
+        </section>
     </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer_grid">
+            <div class="footer_brand">
+                <h2>TechCoffee</h2>
+                <p>Tecnologia, café e desempenho num só lugar. Equipamentos de precisão e torras artesanais para o seu ritual diário.</p>
+                <div class="footer_social">
+                <a href="#" aria-label="Instagram">IG</a>
+                <a href="#" aria-label="Facebook">FB</a>
+                <a href="#" aria-label="YouTube">YT</a>
+                </div>
+            </div>
+            <div class="footer_col">
+                <h4>Navegação</h4>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#origens">Origens</a></li>
+                <li><a href="#selecoes">Seleções</a></li>
+                <li><a href="#perfil">Perfil</a></li>
+                <li><a href="#universo">Universo</a></li>
+                </ul>
+            </div>
+            <div class="footer_col">
+                <h4>Categorias</h4>
+                <ul>
+                <li><a href="cafe.html">Café</a></li>
+                <li><a href="equipamentos.html">Equipamentos</a></li>
+                <li><a href="acessorios.html">Acessórios</a></li>
+                <li><a href="kits.html">Kits</a></li>
+                <li><a href="lifestyle.html">LifeStyle</a></li>
+                </ul>
+            </div>
+            <div class="footer_col">
+                <h4>Informações</h4>
+                <ul>
+                <li><a href="#">Sobre a TechCoffee</a></li>
+                <li><a href="#">Entrega e prazos</a></li>
+                <li><a href="#">Trocas e devoluções</a></li>
+                <li><a href="#">Fale conosco</a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="footer_bottom">
+            <span>&copy; 2026 TechCoffee. Todos os direitos reservados.</span>
+            <span>Feito para quem leva o café a sério.</span>
+            </div>
+        </footer>
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>

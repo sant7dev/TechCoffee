@@ -1076,3 +1076,87 @@ section[id]{
     .lab_grid{ grid-template-columns: 1fr; }
     .footer_bottom{ flex-direction: column; }
 }
+/* ==========================================================
+   EQUIPAMENTOS — Níveis de experiência
+   ========================================================== */
+
+.niveis_nav{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: #000000;
+    box-sizing: border-box;
+}
+.nivel_link{
+    font-family: 'Inter';
+    font-size: 13px;
+    color: #c5c5c5;
+    text-decoration: none;
+    border: 1px solid rgb(78, 78, 78);
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+.nivel_link:hover{
+    color: #C0F500;
+    border-color: #C0F500;
+    transform: scale(1.05);
+}
+.nivel_separador{
+    color: #555555;
+    font-family: 'Space';
+    font-size: 16px;
+}
+
+.nivel_secao{
+    padding: 90px 40px 100px;
+    border-top: 1px solid rgb(40, 40, 40);
+    background-color: #000000;
+    box-sizing: border-box;
+}
+.nivel_secao--basico{ border-top-color: rgba(143, 206, 122, 0.4); }
+.nivel_secao--intermediario{ border-top-color: rgba(224, 184, 75, 0.4); }
+.nivel_secao--espresso{ border-top-color: rgba(226, 121, 61, 0.4); }
+.nivel_secao--avancado{ border-top-color: rgba(178, 59, 59, 0.4); }
+
+.section_tag.nivel_tag--basico{ color: #8fce7a; }
+.section_tag.nivel_tag--intermediario{ color: #e0b84b; }
+.section_tag.nivel_tag--espresso{ color: #e2793d; }
+.section_tag.nivel_tag--avancado{ color: #b23b3b; }
+
+.produtos_grid_niveis .produto_card{
+    box-sizing: border-box;
+    width: calc(33.333% - 20px);
+    min-width: 260px;
+}
+
+.cta_final p{
+    position: relative;
+    z-index: 2;
+    font-family: 'light-inter';
+    font-size: 16px;
+    color: #c5c5c5;
+    max-width: 560px;
+    margin: 0 auto 30px;
+}
+
+@media (max-width: 1024px){
+    .produtos_grid_niveis .produto_card{
+        width: calc(50% - 15px);
+    }
+}
+
+@media (max-width: 768px){
+    .niveis_nav{ padding-top: 20px; gap: 8px; }
+    .nivel_link{ font-size: 12px; padding: 7px 12px; }
+    .nivel_secao{ padding: 60px 20px 70px; }
+    .produtos_grid_niveis .produto_card{
+        width: 100%;
+        max-width: 340px;
+    }
+}
